@@ -20,10 +20,6 @@ input {
     color:#4169E1;
 }
 
-input#temperatura {
-    margin-left: 35px;
-}
-
 select {
     border-radius: 5px;
     padding: 5px;

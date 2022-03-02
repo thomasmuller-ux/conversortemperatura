@@ -15,28 +15,30 @@
     <h1>Conversor de Temperatura</h1>
 </header>
 <section>
-<form>
-    <label for="temperatura"></label>
-    <input type="number" id="temperatura" placeholder="Digite aqui a temperatura">
-    <label for="origem"></label>
-    <select name="origem" id="origem">
-        <option value="1">Celsius °C</option>
-        <option value="2">Fahrenheit °F</option>
-        <option value="3">Kelvin °K</option>
-        <option value="4">Rankine °R</option>
-    </select>
-    <button onclick="converterTemperatura()">Converter</button>
-    <br>
-    <label for="resultadocelsius">°C</label>
-    <input type="number" id="resultadocelsius">
-    <label for="resultadofahrenheit">°F</label>
-    <input type="number" id="resultadofahrenheit">
-    <br>
-    <label for="resultadokelvin">°K</label>
-    <input type="number" id="resultadokelvin">
-    <label for="resultadorankine">°R</label>
-    <input type="number" id="resultadorankine">
-</form>
+    <div>
+        <form>
+            <label for="temperatura"></label>
+            <input type="number" id="temperatura" placeholder="Digite aqui a temperatura">
+            <label for="origem"></label>
+            <select id="origem">
+                <option value="1">Celsius (°C)</option>
+                <option value="2">Fahrenheit (°F)</option>
+                <option value="3">Kelvin (K)</option>
+                <option value="4">Rankine (°R)</option>
+            </select>
+            <button onclick="converterTemperatura(event)">Converter</button>
+            <br>
+            <label for="resultadocelsius"></label>
+            <input id="resultadocelsius" placeholder="°C">
+            <label for="resultadofahrenheit"></label>
+            <input id="resultadofahrenheit" placeholder="°F">
+            <br>
+            <label for="resultadokelvin"></label>
+            <input id="resultadokelvin" placeholder="K">
+            <label for="resultadorankine"></label>
+            <input id="resultadorankine" placeholder="°R">
+        </form>
+    </div>
 </section>
 <footer>
     <p>&copy; ThomásMüller</p>
